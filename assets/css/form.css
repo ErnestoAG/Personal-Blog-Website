@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
+
+#switch {
+    margin-left: 90%;
+    height: 30px;
+    width: 30px;
+}
+
+.title {
+    margin-left: 43%;
+    margin-bottom: 5%;
+    font-family: 'Brush Script MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: teal;
+}
+
+.question {
+    margin-left: 40%;
+    margin-bottom: 5%;
+    font-family: 'Comic Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:lime;
+}
+
+.input {
+    margin-left: 40%;
+}
+
+.input form {
+    font-family: 'Comic Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2%;
+}
+
+.input input {
+    margin-left: 3%;
+}
+
+.input a button {
+    margin-left: 10%;
+}
