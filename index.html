@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <title>Personal Blog</title>
     <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <button id="switch"></button>
     <h1 class="title">My First Blog</h1>
     <h2 class="question">What is on your mind?</h2>
     <section class="input">
-        <form>Username:<input></form>
-        <form>Title:<input></form>
-        <form>Content:<input></form>
-        <a href='blog.html'><button>Submit</button></a>
+        <form>
+            <fieldset class="blog">
+                <legend>Blog</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title"><br><br>
+                <label for="content">Content:</label><br>
+                <textarea type="text" id="content" name="content" rows="10" cols="50"></textarea><br><br>
+                <input href='blog.html' id='submit' type="submit">
+            </fieldset>
+        </form>
     </section>
+    <!-- <script src="assets/js/form.js"></script> -->
     <script src="assets/js/form.js"></script>
 </body>
 </html>
