@@ -1,11 +1,9 @@
-var Switch = document.getElementById("switch");
+var blog = JSON.parse(localStorage.getItem('blog'));
+var log = JSON.parse(localStorage.getItem('blog#'));
 
-
-function switchMode() {
-    var mode = document.body;
-    mode.classList.toggle("dark");
+if (log != 0) {
+    var post = document.getElementById(JSON.stringify(log));
+    post.getElementsByClassName('name')[0].textContent = blog.Name;
+    post.getElementsByClassName('title')[0].textContent = blog.Title;
+    post.querySelector('p').textContent = blog.Content;
 }
-
-
-
-Switch.addEventListener('click', () => switchMode());

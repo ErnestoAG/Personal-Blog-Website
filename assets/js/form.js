@@ -1,5 +1,6 @@
 const Switch = document.getElementById("switch");
 const Submit = document.querySelector("form");
+var log = JSON.parse(localStorage.getItem('blog#'));
 
 function switchMode() {
     var mode = document.body;
@@ -18,5 +19,16 @@ Submit.addEventListener('submit', function(event) {
         "Content": content.value,
     }
     localStorage.setItem('blog', JSON.stringify(blog));
-    var Blog = localStorage.getItem('blog');
+    if (log != null){
+        log += 1;
+        localStorage.setItem('blog#', JSON.stringify(log));
+    } else if (log == 5){
+        log = 1;
+        localStorage.setItem('blog#', JSON.stringify(log));
+    }
+    else {
+        log = 1;
+        localStorage.setItem('blog#', JSON.stringify(log));
+    }
+    window.open('blog.html', '_self');
 });
