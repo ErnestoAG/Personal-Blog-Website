@@ -19,9 +19,10 @@ body {
 }
 
 .title {
-    margin-left: 43%;
+    margin-left: 40%;
     margin-bottom: 5%;
     font-family: 'Brush Script MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 300%;
     color: teal;
 }
 

@@ -1,4 +1,5 @@
 .dark {
     background: url('../images/jet_black.jpg');
+    background-size: contain;
     color: white;
 }
