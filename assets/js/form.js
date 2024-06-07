@@ -16,17 +16,6 @@ Submit.addEventListener('submit', function(event) {
     var title = document.getElementById("title");
     var content = document.getElementById("content");
 
-    if (log != null){
-        log += 1;
-        localStorage.setItem('blog#', JSON.stringify(log));
-        if (log > 5) {
-            log = 1;
-            localStorage.setItem('blog#', JSON.stringify(log));
-        }
-    } else {
-        log = 1;
-        localStorage.setItem('blog#', JSON.stringify(log));
-    }
     if (Name.value == "") {
         window.alert("Please, add missing information before submitting blog.");
         return;
@@ -38,11 +27,20 @@ Submit.addEventListener('submit', function(event) {
         return;
     }
 
+    if (log != null){
+        log += 1;
+        localStorage.setItem('blog#', JSON.stringify(log));
+    } else {
+        log = 1;
+        localStorage.setItem('blog#', JSON.stringify(log));
+    }
+
     var blog = {
         "Name": Name.value,
         "Title": title.value,
         "Content": content.value,
     }
+
     if (BlogC != null) {
         var Blog = [];
         for (let i = 0; i < log - 1; i++) {
