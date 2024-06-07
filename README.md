@@ -12,7 +12,7 @@ The JavaScript code for the Personal Blog Website website is complete according 
 * The footer provides user information and a link to the portfolio website.
 * Users can click on the Back button to return to the form page.
    
- Here is the link to the web page:
+ Here is the link to the web page: https://ernestoag.github.io/Personal-Blog-Website/
  
 ## Installation
 
